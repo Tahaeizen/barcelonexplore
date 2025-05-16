@@ -1,11 +1,8 @@
 import Image from 'next/image';
-import styles from './page.module.css';
 export default function Home() {
     return (
-        <main className={styles.main}>
-        <div className={styles.welcome}>
-            Soyez la bienvenue sur BarcelonExplore
-        </div>
+        <main className='flex justify-center items-center h-screen'>
+        <div className="text-green-500">Soyez la bienvenue sur Barcelonexplore</div>
         </main>
     );
 }
