@@ -1,7 +1,8 @@
+import Image from "next/image";
+
 export default function Banniere() {
     return (
-        <section className="flex justify-center h-20">
-            <h1>BANNIERE</h1>
+        <section className="relative h-10 w-full bg-[#fdbf62da]">
         </section>
     );
 }
