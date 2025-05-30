@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titre": "Secrets du Born et tapas locales",
+    "image": "/img/born-tapas.webp",
+    "description": "Balade guidée dans le quartier du Born, découverte de ses ruelles animées, de ses ateliers d'artisans et dégustation de tapas dans des bars typiques.",
+    "prix": "32,00 €"
+  },
+  {
+    "id": 2,
+    "titre": "Barcelone nocturne à pied",
+    "image": "/img/barcelone-nuit.webp",
+    "description": "Explorez la magie de Barcelone la nuit, entre monuments illuminés, ambiance festive et histoires mystérieuses racontées par votre guide.",
+    "prix": "28,00 €"
+  },
+  {
+    "id": 3,
+    "titre": "Architecture et jardins de Montjuïc",
+    "image": "/img/montjuic-jardin.webp",
+    "description": "Visite guidée du parc de Montjuïc, ses jardins secrets, ses points de vue sur la ville et ses bâtiments emblématiques comme le Palais National.",
+    "prix": "30,00 €"
+  },
+  {
+    "id": 4,
+    "titre": "Barcelone insolite en Segway",
+    "image": "/img/segway.webp",
+    "description": "Une expérience fun et originale pour découvrir Barcelone autrement, en Segway, à travers des itinéraires hors des sentiers battus.",
+    "prix": "39,00 €"
+  },
+  {
+    "id": 5,
+    "titre": "Visite Street Art et Graffitis",
+    "image": "/img/street-art.webp",
+    "description": "Découvrez les plus belles fresques murales et œuvres de street art dans les quartiers alternatifs de Barcelone.",
+    "prix": "27,00 €"
+  },
+  {
+    "id": 6,
+    "titre": "Balade en vélo le long du littoral",
+    "image": "/img/velo-littoral.webp",
+    "description": "Parcourez la côte barcelonaise à vélo, du port olympique aux plages de la Barceloneta, avec pauses panoramiques.",
+    "prix": "34,00 €"
+  }
+] 
