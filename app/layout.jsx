@@ -1,9 +1,9 @@
 "use client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import VisitesGuidees from "@/components/home/VisitesGuidees";
-import Hotels from "@/components/home/Hotels";
-import SoireesSpectacles from "@/components/home/SoireesSpectacles";
+import VisitesGuidees from "@/components/VisitesGuidees";
+import Hotels from "@/components/Hotels";
+import SoireesSpectacles from "@/components/SoireesSpectacles";
 import Home from "@/app/page";
 
 import { useState } from "react";
