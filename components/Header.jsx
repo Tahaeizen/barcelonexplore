@@ -11,7 +11,7 @@ export default function Header({ changePage }) {
         <header className="fixed top-0 left-0 right-0 z-50 bg-amber-100 text-gray-900 shadow-md h-20 flex items-center">
             <div className="max-w-7xl mx-auto w-full flex items-center justify-between px-4 sm:px-8">
                 {/* Logo + titre + hamburger */}
-                <div className="flex items-center min-w-[250px] flex-shrink-0">
+                <div className="flex items-center min-w-[250px] flex-shrink-0 pl-2">
                     <Image
                         src={logo}
                         alt="Logo"
@@ -41,7 +41,7 @@ export default function Header({ changePage }) {
                 </div>
 
                 {/* Drapeau de la Catalogne */}
-                <div className="hidden lg:flex flex-shrink-0">
+                <div className="hidden lg:flex flex-shrink-0 items-center h-full">
                     <Image
                         src="/img/drapeau-catalogne.webp"
                         alt="Drapeau de la Catalogne"

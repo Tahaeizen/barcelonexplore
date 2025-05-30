@@ -5,7 +5,7 @@ import listeHotels from "@/public/json/hotels.json";
 
 export default function Hotels() {
   return (
-    <section>
+    <section className="max-w-6xl flex w-full flex-col items-center mx-auto px-4 py-10 mb-24 scroll-mt-20">
       <h1 className="text-3xl font-bold text-center mb-2 font-sans mt-10">Nos meilleurs hôtels à Barcelone</h1>
       <div className="flex justify-center mb-4">
         <div className="h-1 w-16 bg-amber-400 rounded"></div>

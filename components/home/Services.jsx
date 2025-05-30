@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import services from "@/public/json/services.json";
+import DisplayService from "@/components/DisplayService";
 
 export default function Services() {
     return (
@@ -15,62 +17,15 @@ export default function Services() {
 
             {/* Services */}
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="relative h-[200px] mb-6">
-                        <Image
-                            src="/img/visites-guidees.webp"
-                            alt="Visites guidées"
-                            fill
-                            className="object-cover rounded-lg"
-                        />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">Visites guidées</h3>
-                    <p className="text-gray-600">
-                        Découvrez Barcelone avec nos guides experts passionnés par la ville.
-                    </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="relative h-[200px] mb-6">
-                        <Image
-                            src="/img/hotels.webp"
-                            alt="Hôtels"
-                            fill
-                            className="object-cover rounded-lg"
-                        />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">Hôtels</h3>
-                    <p className="text-gray-600">
-                        Une sélection des meilleurs hôtels de Barcelone pour votre séjour.
-                    </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="relative h-[200px] mb-6">
-                        <Image
-                            src="/img/soirees-spectacles.webp"
-                            alt="Soirées et spectacles"
-                            fill
-                            className="object-cover rounded-lg"
-                        />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">Soirées et spectacles</h3>
-                    <p className="text-gray-600">
-                        Profitez des meilleures soirées et spectacles de Barcelone : flamenco, concerts, événements locaux et plus encore.
-                    </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="relative h-[200px] mb-6">
-                        <Image
-                            src="/img/sejours-sur-mesure.webp"
-                            alt="Circuits personnalisés"
-                            fill
-                            className="object-cover rounded-lg"
-                        />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">Circuits personnalisés</h3>
-                    <p className="text-gray-600">
-                        Des parcours adaptés à vos centres d'intérêt pour une expérience unique à Barcelone.
-                    </p>
-                </div>
+                {services.map((service, idx) => (
+                    <DisplayService
+                        key={idx}
+                        image={service.image}
+                        alt={service.alt}
+                        titre={service.titre}
+                        description={service.description}
+                    />
+                ))}
             </div>
         </section>
     );

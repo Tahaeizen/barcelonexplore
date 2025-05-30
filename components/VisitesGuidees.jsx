@@ -3,7 +3,7 @@ import DisplayVisite from "./DisplayVisite";
 
 export default function VisitesGuidees() {
   return (
-    <section>
+    <section className="max-w-6xl flex w-full flex-col items-center mx-auto px-4 py-10 mb-24 scroll-mt-20">
       {/* Bloc d'introduction */}
       <h1 className="text-3xl font-bold text-center mb-2 font-sans mt-10">Explorez Barcelone autrement avec nos visites exclusives</h1>
       <div className="flex justify-center mb-4">

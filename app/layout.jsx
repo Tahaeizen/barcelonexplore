@@ -18,17 +18,19 @@ export default function RootLayout({ children }) {
             <body className="flex flex-col min-h-screen">
                 <Header changePage={setCurrentPage} />
                 <main className="flex-1 pt-20">
-                    {currentPage === "Accueil" ? (
-                        <Home />
-                    ) : currentPage === "VisitesGuidees" ? (
-                        <VisitesGuidees />
-                    ) : currentPage === "Hotels" ? (
-                        <Hotels />
-                    ) : currentPage === "SoireesSpectacles" ? (
-                        <SoireesSpectacles />
-                    ) : (
-                        <div>Page Not Found</div>
-                    )}
+                    <div className="max-w-7xl mx-auto px-4 sm:px-8">
+                        {currentPage === "Accueil" ? (
+                            <Home />
+                        ) : currentPage === "VisitesGuidees" ? (
+                            <VisitesGuidees />
+                        ) : currentPage === "Hotels" ? (
+                            <Hotels />
+                        ) : currentPage === "SoireesSpectacles" ? (
+                            <SoireesSpectacles />
+                        ) : (
+                            <div>Page Not Found</div>
+                        )}
+                    </div>
                 </main>
                 <Footer />
             </body>
