@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titre": "Hôtel Mirador Barcelona",
+    "image": "/img/hotel-mirador.webp",
+    "description": "Un hôtel moderne avec vue panoramique sur la ville, piscine sur le toit et petit-déjeuner inclus.",
+    "prix": "89,00 €"
+  },
+  {
+    "id": 2,
+    "titre": "Boutique Hôtel El Born",
+    "image": "/img/hotel-born.webp",
+    "description": "Situé au cœur du quartier historique, chambres élégantes et ambiance chaleureuse.",
+    "prix": "120,00 €"
+  },
+  {
+    "id": 3,
+    "titre": "Auberge Jeunesse Barceloneta",
+    "image": "/img/hotel-barceloneta.webp",
+    "description": "Idéal pour les petits budgets, à deux pas de la plage, dortoirs et chambres privées.",
+    "prix": "35,00 €"
+  },
+  {
+    "id": 4,
+    "titre": "Hôtel Spa Rambla",
+    "image": "/img/hotel-rambla.webp",
+    "description": "Détente assurée avec spa, hammam et massages, à proximité des Ramblas.",
+    "prix": "150,00 €"
+  },
+  {
+    "id": 5,
+    "titre": "Hôtel Familia Sagrada",
+    "image": "/img/hotel-sagrada.webp",
+    "description": "À deux pas de la Sagrada Familia, chambres familiales et terrasse panoramique.",
+    "prix": "110,00 €"
+  },
+  {
+    "id": 6,
+    "titre": "EcoHostel Gracia",
+    "image": "/img/hotel-ecohostel.webp",
+    "description": "Auberge écologique dans le quartier de Gracia, ambiance conviviale et respect de l'environnement.",
+    "prix": "40,00 €"
+  }
+] 
