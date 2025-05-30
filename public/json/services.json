@@ -1,0 +1,26 @@
+[
+  {
+    "image": "/img/visites-guidees.webp",
+    "alt": "Visites guidées",
+    "titre": "Visites guidées",
+    "description": "Découvrez Barcelone avec nos guides experts passionnés par la ville."
+  },
+  {
+    "image": "/img/hotels.webp",
+    "alt": "Hôtels",
+    "titre": "Hôtels",
+    "description": "Une sélection des meilleurs hôtels de Barcelone pour votre séjour."
+  },
+  {
+    "image": "/img/soirees-spectacles.webp",
+    "alt": "Soirées et spectacles",
+    "titre": "Soirées et spectacles",
+    "description": "Profitez des meilleures soirées et spectacles de Barcelone : flamenco, concerts, événements locaux et plus encore."
+  },
+  {
+    "image": "/img/sejours-sur-mesure.webp",
+    "alt": "Circuits personnalisés",
+    "titre": "Circuits personnalisés",
+    "description": "Des parcours adaptés à vos centres d'intérêt pour une expérience unique à Barcelone."
+  }
+] 
