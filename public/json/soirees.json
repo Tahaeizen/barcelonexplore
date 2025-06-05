@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titre": "Spectacle de flamenco au Tablao Cordobés",
+    "image": "/img/flamenco.webp",
+    "description": "Assistez à une performance intense et passionnée de flamenco dans l’un des lieux les plus emblématiques de Barcelone.",
+    "prix": "45,00 €"
+  },
+  {
+    "id": 2,
+    "titre": "Soirée jazz au Harlem Jazz Club",
+    "image": "/img/jazz.webp",
+    "description": "Plongez dans l’ambiance feutrée du Harlem Jazz Club avec des concerts live de jazz, funk et blues.",
+    "prix": "18,00 €"
+  },
+  {
+    "id": 3,
+    "titre": "Cabaret au Poble Espanyol",
+    "image": "/img/chic.webp",
+    "description": "Une soirée chic et artistique avec danse, musique live et spectacle visuel dans un décor typique espagnol.",
+    "prix": "60,00 €"
+  },
+  {
+    "id": 4,
+    "titre": "Soirée tapas et guitare espagnole",
+    "image": "/img/tapas.webp",
+    "description": "Dégustez des tapas traditionnelles tout en profitant d’un concert de guitare espagnole dans une ambiance conviviale.",
+    "prix": "38,00 €"
+  },
+  {
+    "id": 5,
+    "titre": "Spectacle de magie à El Rey de la Magia",
+    "image": "/img/magie.webp",
+    "description": "Un spectacle interactif pour toute la famille dans l’un des plus anciens théâtres de magie d’Europe.",
+    "prix": "25,00 €"
+  },
+  {
+    "id": 6,
+    "titre": "Concert pop-rock à la Sala Razzmatazz",
+    "image": "/img/rock.webp",
+    "description": "Vibrez au rythme des meilleurs groupes pop-rock du moment dans cette salle mythique de Barcelone.",
+    "prix": "30,00 €"
+  }
+]
