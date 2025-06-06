@@ -10,8 +10,10 @@ export default function DisplaySoirees({ titre, image, description, prix }) {
       </div>
       {/* Contenu principal */}
       <div className="flex-1 flex flex-col p-4">
-        <h3 className="font-bold text-lg mb-2">{titre}</h3>
-        <p className="text-gray-700 mb-4">{description}</p>
+        <div className="mb-4 min-h-[100px] flex flex-col">
+          <h3 className="font-bold text-lg mb-2">{titre}</h3>
+          <p className="text-gray-700">{description}</p>
+        </div>
         <hr className="my-2" />
         <div className="mb-1 text-sm text-gray-600">prix à partir de</div>
         <div className="text-3xl font-bold text-gray-900 mb-1">{prix}</div>
