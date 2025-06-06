@@ -3,42 +3,48 @@
     "id": 1,
     "titre": "Spectacle de flamenco au Tablao Cordobés",
     "image": "/img/flamenco.webp",
-    "description": "Assistez à une performance intense et passionnée de flamenco dans l’un des lieux les plus emblématiques de Barcelone.",
-    "prix": "45,00 €"
+    "description": "Assistez à une performance intense et passionnée de flamenco dans l'un des lieux les plus emblématiques de Barcelone. Rendez-vous le samedi 20 juillet 2024 à 21h00 pour une soirée inoubliable.",
+    "prix": "45,00 €",
+    "date": "2024-07-20T21:00:00"
   },
   {
     "id": 2,
     "titre": "Soirée jazz au Harlem Jazz Club",
     "image": "/img/jazz.webp",
-    "description": "Plongez dans l’ambiance feutrée du Harlem Jazz Club avec des concerts live de jazz, funk et blues.",
-    "prix": "18,00 €"
+    "description": "Plongez dans l'ambiance feutrée du Harlem Jazz Club avec des concerts live de jazz, funk et blues. Prochaine session le vendredi 26 juillet 2024 à 20h30.",
+    "prix": "18,00 €",
+    "date": "2024-07-26T20:30:00"
   },
   {
     "id": 3,
     "titre": "Cabaret au Poble Espanyol",
     "image": "/img/chic.webp",
-    "description": "Une soirée chic et artistique avec danse, musique live et spectacle visuel dans un décor typique espagnol.",
-    "prix": "60,00 €"
+    "description": "Une soirée chic et artistique avec danse, musique live et spectacle visuel dans un décor typique espagnol. Le cabaret aura lieu le samedi 3 août 2024 à 22h00.",
+    "prix": "60,00 €",
+    "date": "2024-08-03T22:00:00"
   },
   {
     "id": 4,
     "titre": "Soirée tapas et guitare espagnole",
     "image": "/img/tapas.webp",
-    "description": "Dégustez des tapas traditionnelles tout en profitant d’un concert de guitare espagnole dans une ambiance conviviale.",
-    "prix": "38,00 €"
+    "description": "Dégustez des tapas traditionnelles tout en profitant d'un concert de guitare espagnole dans une ambiance conviviale. Rendez-vous le vendredi 9 août 2024 à 19h30.",
+    "prix": "38,00 €",
+    "date": "2024-08-09T19:30:00"
   },
   {
     "id": 5,
     "titre": "Spectacle de magie à El Rey de la Magia",
     "image": "/img/magie.webp",
-    "description": "Un spectacle interactif pour toute la famille dans l’un des plus anciens théâtres de magie d’Europe.",
-    "prix": "25,00 €"
+    "description": "Un spectacle interactif pour toute la famille dans l'un des plus anciens théâtres de magie d'Europe. Ne manquez pas la représentation du dimanche 18 août 2024 à 17h00.",
+    "prix": "25,00 €",
+    "date": "2024-08-18T17:00:00"
   },
   {
     "id": 6,
     "titre": "Concert pop-rock à la Sala Razzmatazz",
     "image": "/img/rock.webp",
-    "description": "Vibrez au rythme des meilleurs groupes pop-rock du moment dans cette salle mythique de Barcelone.",
-    "prix": "30,00 €"
+    "description": "Vibrez au rythme des meilleurs groupes pop-rock du moment dans cette salle mythique de Barcelone. Prochain concert le samedi 31 août 2024 à 21h30.",
+    "prix": "30,00 €",
+    "date": "2024-08-31T21:30:00"
   }
 ]
