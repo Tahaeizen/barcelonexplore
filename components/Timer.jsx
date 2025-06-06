@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import styles from "@/components/Timer.module.css";
-
 
 export default function Timer({ compte = 60, onExpire }) {
   const [decompte, setCompte] = useState(compte);
@@ -8,7 +6,7 @@ export default function Timer({ compte = 60, onExpire }) {
   useEffect(() => {
     if (decompte <= 0) {
       if (onExpire) onExpire();
-      return; // stop if timer finished
+      return; 
     }
     const intervalID = setInterval(() => {
       setCompte((prev) => prev - 1);
@@ -16,13 +14,13 @@ export default function Timer({ compte = 60, onExpire }) {
     return () => clearInterval(intervalID);
   }, [decompte, onExpire]);
 
-  // Format minutes and seconds for display
+  
   const minutes = Math.floor(decompte / 60);
   const seconds = decompte % 60;
 
   return (
-    <div className={styles.timer}>
-      Offres expire dans : {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-    </div>
+    <span className="text-3xl md:text-4xl font-bold text-gray-900">
+      {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+    </span>
   );
 }
