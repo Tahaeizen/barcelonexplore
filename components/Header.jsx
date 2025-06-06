@@ -35,7 +35,7 @@ export default function Header({ changePage }) {
                     </button>
                 </div>
 
-                {/* Navbar */}
+                {/* Navbar desktop */}
                 <div className="hidden lg:flex flex-1 justify-center">
                     <NavBar setPage={changePage} />
                 </div>
@@ -53,7 +53,11 @@ export default function Header({ changePage }) {
 
                 {/* Menu mobile */}
                 <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden absolute top-20 left-0 right-0 bg-amber-100 shadow-lg z-40 pt-10`}>
-                    <NavBar isMobile={true} onClose={() => setIsMenuOpen(false)} />
+                    <NavBar 
+                        setPage={changePage} 
+                        isMobile={true} 
+                        onClose={() => setIsMenuOpen(false)} 
+                    />
                 </div>
             </div>
         </header>
