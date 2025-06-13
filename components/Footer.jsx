@@ -1,3 +1,5 @@
+import Contact from './Contact.jsx';
+import Link from 'next/link';
 export default function Footer() {
     return (
         <footer className="bg-amber-100 text-black py-4 mt-6 font-sans border-t border-amber-200">
@@ -36,7 +38,9 @@ export default function Footer() {
                                 <a href="#info" className="hover:underline font-semibold">À propos de nous</a>
                             </li>
                             <li>
-                                <a href="#contact" className="hover:underline font-semibold">Contactez-nous</a>
+                                <Link href="/contact" className="hover:underline font-semibold">
+                                    Contactez-nous
+                                </Link>
                             </li>
                         </ul>
                     </div>
