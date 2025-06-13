@@ -13,9 +13,10 @@ export default function Info() {
                     Notre expertise et nos relations privilégiées avec les meilleurs hôtels et prestataires de services 
                     nous permettent de vous offrir des tarifs compétitifs et un service de qualité.
                 </p>
-                <button className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 font-semibold transition-colors">
+                <Link href="/contact" className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 font-semibold transition-colors">
                     Contactez-nous
-                </button>
+                    </Link>
+                
             </div>
         </section>
     );
