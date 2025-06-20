@@ -44,6 +44,7 @@ export default function Footer() {
                             <li className="font-semibold">English</li>
                         </ul>
                     </div>
+                    {/* Colonne 4 */}
                     <div>
                         <h3 className="font-bold text-lg mb-2">Contact</h3>
                         <ul className="space-y-1">
