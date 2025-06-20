@@ -16,10 +16,24 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-2">Nos services</h3>
                         <ul className="space-y-1">
-                            <li className="font-semibold">Visites guidées</li>
-                            <li className="font-semibold">Hôtels</li>
-                            <li className="font-semibold">Soirées & spectacles</li>
-                            <li className="font-semibold">Circuits personnalisés</li>
+                            <li>
+                                <Link href="/visites-guidees" className="hover:underline font-semibold">
+                                    Visites guidées
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/hotels" className="hover:underline font-semibold">
+                                    Hôtels
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/soirees-spectacles" className="hover:underline font-semibold">
+                                    Soirées & spectacles
+                                </Link>
+                            </li>
+                            <li className="font-semibold">
+                                Circuits personnalisés
+                            </li>
                         </ul>
                     </div>
                     {/* Colonne 3 */}
@@ -30,7 +44,6 @@ export default function Footer() {
                             <li className="font-semibold">English</li>
                         </ul>
                     </div>
-                    {/* Colonne 4 */}
                     <div>
                         <h3 className="font-bold text-lg mb-2">Contact</h3>
                         <ul className="space-y-1">
