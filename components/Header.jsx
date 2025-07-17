@@ -1,19 +1,29 @@
+'use client';
 import Image from "next/image";
 import logo from "@/public/img/sagrada-familia.webp";
 import NavBar from "@/components/NavBar";
 import Link from "next/link";
+import { FaMoon } from "react-icons/fa";
+import { IoIosSunny } from "react-icons/io";
 import { useState } from "react";
- 
+
+import i18next from "@/i18next";
+
+import { useMyContext } from "./provider/MyContextProvider";
+
+
 export default function Header() {
+    const { theme, toggleTheme } = useMyContext();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
- 
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
- 
+
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-amber-100 text-gray-900 shadow-md h-20 flex items-center">
-            <div className="max-w-7xl mx-auto w-full flex items-center justify-between px-4 sm:px-8">
+        <header className={`flex justify-center h-20 items-center ${
+                theme === "light" ? "bg-blue-700" : "bg-black"
+            } text-white`}>
                 {/* Logo + titre + hamburger */}
                 <div className="flex items-center min-w-[250px] flex-shrink-0 pl-2">
                     <Link href="/" className="flex items-center">
@@ -40,12 +50,12 @@ export default function Header() {
                         </div>
                     </button>
                 </div>
- 
+
                 {/* Navbar desktop */}
                 <div className="hidden lg:flex flex-1 justify-center">
                     <NavBar />
                 </div>
- 
+
                 {/* Drapeau de la Catalogne */}
                 <div className="hidden lg:flex flex-shrink-0 items-center h-full">
                     <Image
@@ -56,16 +66,29 @@ export default function Header() {
                         className="cursor-pointer"
                     />
                 </div>
- 
+
+                <button onClick={toggleTheme}
+                    className="ml-4 p-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors"
+                >
+                    {theme === "light" ? <FaMoon /> : <IoIosSunny />}
+                </button>
+
+                <select
+                    onChange={(e) => i18next.changeLanguage(e.target.value)}
+                    defaultValue={i18next.language}
+                    className="ml-4 p-2 rounded bg-gray-200 text-gray-800"
+                >
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+
                 {/* Menu mobile */}
                 {isMenuOpen && (
                     <div className="lg:hidden absolute top-20 left-0 right-0 bg-amber-100 shadow-lg z-40 pt-10">
                         <NavBar isMobile={true} />
                     </div>
                 )}
-            </div>
         </header>
     );
 }
- 
- 
+
