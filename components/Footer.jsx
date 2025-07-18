@@ -22,7 +22,7 @@ export default function Footer() {
                     </div>
                     {/* Colonne 2 */}
                     <div>
-                        <h3 className="font-bold text-lg mb-2">Nos services</h3>
+                        <h3 className="font-bold text-lg mb-2">{tFooter('footer.services')}</h3>
                         <ul className="space-y-1">
                             <li>
                                 <Link href="/visites-guidees" className="hover:underline font-semibold">
