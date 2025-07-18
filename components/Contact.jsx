@@ -5,7 +5,6 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Head from "next/head";
 
-
 const classForm =
   "w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-200 focus:border-transparent";
 
@@ -42,10 +41,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_hzhn244",
-        "template_mkpvvd2",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         templateParams,
-        "kVQEkKaZmkSNpdn_G"
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       )
       .then(
         () => {
@@ -78,7 +77,10 @@ export default function Contact() {
         />
       </Head>
 
-      <section className="max-w-xl mx-auto p-4" aria-label="Formulaire de contact">
+      <section
+        className="max-w-xl mx-auto p-4"
+        aria-label="Formulaire de contact"
+      >
         <header>
           <h1 className="text-2xl font-bold mb-4">Contactez-nous</h1>
         </header>
@@ -96,7 +98,11 @@ export default function Contact() {
           </div>
         )}
 
-        <form className="space-y-4" onSubmit={handleSubmit(sendEmail)} noValidate>
+        <form
+          className="space-y-4"
+          onSubmit={handleSubmit(sendEmail)}
+          noValidate
+        >
           <div>
             <label htmlFor="nom" className="block mb-1 font-medium">
               Nom :
@@ -176,7 +182,11 @@ export default function Contact() {
               aria-describedby={errors.message ? "message-error" : undefined}
             />
             {errors.message && (
-              <p id="message-error" className="text-red-500 text-sm" role="alert">
+              <p
+                id="message-error"
+                className="text-red-500 text-sm"
+                role="alert"
+              >
                 {errors.message.message}
               </p>
             )}
