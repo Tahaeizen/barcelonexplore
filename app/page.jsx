@@ -9,9 +9,10 @@ export const metadata = {
     openGraph: {
       title: 'Accueil',
       description: 'Page accueil',
-      images: ['public/img/sagrada-familia.webp']
-    }
-}
+      images: ['/img/sagrada-familia.webp']
+    },
+    manifest: '/manifest.json',
+};
 
 export default function Home() {
     return (
